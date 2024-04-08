@@ -1,0 +1,10 @@
+local info = {
+  discord = "mizticuhl";
+  status = "enabled";
+  announcement = "";
+  support_discord = {
+    strucid = "mizticuhl";
+    da_hood = "mizticuhl";
+  }
+}
+return info
