@@ -1,0 +1,29 @@
+local Part1 = Feet * 12
+local Part2 = Part1 + Inches
+
+if _G.HeighCalculator == true and _G.BMICalculator == false then
+  print("You are "..Feet.." foot "..Inches.." inches tall.")
+  print("You are ".. Part2.." inches tall!")
+elseif _G.BMICalculator == true and _G.HeighCalculator == false then
+  
+  local height = Part2 -- Inches ---
+  local weight2 = Weight  -- Pounds ---
+
+  local height2 = height ^ 2
+  local BMI = weight2 / height2
+  local BMI2 = BMI * 703
+
+  print("Your BMI is " .. BMI2)
+
+  if BMI2 < 18.5 then
+    print("You are underweight")
+  elseif BMI2 >= 18.5 and BMI2 <= 24.9 then
+    print("You are Healthy!")
+  elseif BMI2 >= 25 and BMI2 <= 29.9 then
+    print("You are Overweight!")
+  elseif BMI2 >= 30 and BMI2 <= 39.9 then
+    print("You are Obese!")
+  elseif BMI2 >= 40 then
+    print("You are severely obese!")
+  end
+end
